@@ -131,7 +131,7 @@ Number(true)        // 1  （Boolean值，true轉換1，false轉換為0）
 Number(5)         // 5  （數字值，直接返回）
 
 Number(null)        // 0  （null值轉換為0）
-Number(undefined)     // NaN（undefined值轉換為0）
+Number(undefined)     // NaN（undefined值轉換為NaN）
 
 Number("123")       // 123（字符串中只包含數字）
 Number("00011")     // 11 （前導的0會被忽略）
