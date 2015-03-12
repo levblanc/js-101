@@ -47,7 +47,7 @@
   false + 2             // 2  （ Number(false) => 0 ）
   
   null + 1              // 1  （ Number(null) => 0）
-  undefined + 1         // NaN（Number(undefined) => NaN）
+  undefined + 1         // NaN（ Number(undefined) => NaN ）
 
 ```
 
@@ -111,7 +111,7 @@
   // 如果第一個操作數是對象，則返回第一個操作數
   obj || true           // { name : 'object' } 
   
-  // 如果第一個個操作數不為真，則返回第二個操作數
+  // 如果第一個操作數不為真，則返回第二個操作數
   false || obj          // { name : 'object' }
   
   // 當兩個操作數都是NaN、null或undefined時，才返回這些值
@@ -119,7 +119,7 @@
 
 ```
 
-### 相等（=）和 不相等（!=）
+### 相等（==）和 不相等（!=）
 
 這兩個操作符都會先轉換操作數（強制轉型），然後再比較相等性。
 
@@ -137,7 +137,7 @@
   
   // null 和 undefined與其它值進行比較，不會進行強制轉換
   undefined == 0        // false
-  nul == 0              // false
+  null == 0              // false
   
   // NaN 與任何值都不等
   NaN == NaN            // false
@@ -145,7 +145,7 @@
 
 ```
 
-### 全等（=）和 不全等（!=）
+### 全等（===）和 不全等（!==）
 
 這兩個操作符，在比較相等性之前，不會強制轉型。
 
