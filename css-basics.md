@@ -28,11 +28,11 @@
   * ```:only-child```
   
 
-## ```<link>``` 和 ```@import```的區別
+## ```<link>``` 和 ```@import```
 
-```<link>```是HTML標籤，在HTML文件中引入CSS文件。其實就是告訴瀏覽器這個頁面對應的樣式文件是什麼，形成一種HTML和CSS文件的對應關係。一般推薦使用```link```標籤引入CSS文件。 
+在HTML文件中引入CSS文件，使用```<link>```，它是HTML標籤。其實就是告訴瀏覽器這個頁面對應的樣式文件是什麼，形成一種HTML和CSS文件的對應關係。一般推薦使用```link```標籤引入CSS文件。 
 
-```@import```是CSS引入機制，在一張CSS中引入另外一張樣式。使用```@import```的其中一個原因，是針對老舊瀏覽器的hack，因為它們不知道```@import```，所以可以用它來隱藏一些樣式（不希望被老舊瀏覽器渲染的CSS，就放在```@import```中引入）。
+在一張CSS中引入另外一張樣式，使用```@import```，它是CSS引入機制。使用```@import```的其中一個原因，是針對老舊瀏覽器的hack，因為它們不知道```@import```，所以可以用它來隱藏一些樣式（不希望被老舊瀏覽器渲染的CSS，就放在```@import```中引入）。
 
 但是，Steve Souders在 [*don’t use @import*](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/) 一文中，詳細對比了通過```<link>
 ```和```@import```來引入CSS的性能差異。
