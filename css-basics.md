@@ -20,6 +20,19 @@
   * ```transition```      （IE10）
   * ```@keyframes```      （IE10）
   * ```animation```       （IE10）
+  
+  常用偽類：
+  
+  *  ```:nth-child(x)```
+  *  ```:enabled``` / ```:disabled```
+  *  ```:checked```
+
+  不常用偽類：
+  
+  * ```:first-of-type``` / ```:last-of-type```
+  * ```:only-of-type```
+  * ```:only-child```
+  
 
 ## ```<link>``` 和 ```@import```
 
@@ -47,9 +60,9 @@ PS：```<link>```的權重高於```@import```。
 4. Author ```!important``` declarations,
 5. User ```!important``` declarations
 
-### 元素權重
+### 樣式權重
 
-|              元素                       |   權重    |
+|              樣式類型                    |   權重    |
 |:---------------------------------------|:----------|
 |inline style                            | 1000      |
 |ID                                      | 100       |
@@ -76,3 +89,42 @@ PS：```<link>```的權重高於```@import```。
     _color : green; /* IE6 */
  }
 ```
+## Float 元素浮動
+
+設置了浮動的元素，會浮動至容器的左側或右側（根據設置的值）。Float只能設置```left``` 或 ```right```，沒有up或down。
+
+當一個塊狀元素（默認或設置了```display: block;```的元素）設置為float，它後面的元素將會環繞在其周圍。
+
+不同于```absolute```定位，```float```的元素并沒有脫離它本身的流，只是被push到一邊。
+
+### 清除浮動的幾種方式（ 更詳細的講解，可參考文章 [*All About Floats*](https://css-tricks.com/all-about-floats/) ）
+
+ * 當前兩個元素都設置了浮動，第三個元素沒有設置浮動時，會出現如下情況：
+
+ ![float-not-cleared](https://github.com/levblanc/js-101/blob/master/img/float-not-cleared.jpg)
+ 
+ 此時可用```clear```來解決
+ 
+ ```css
+   .footer {
+       clear : both;
+   }
+ ```
+ ![float-not-cleared](https://github.com/levblanc/js-101/blob/master/img/float-cleared.jpg)
+ 
+ * 當container內的所有子元素都設置了float，container會collapse（沒有了高度），如下圖：
+ 
+ ![parent-collapsed](https://github.com/levblanc/js-101/blob/master/img/parent-collapsed.jpg)
+ 
+  此時可用```clearfix```方法來解決
+ 
+ ```css
+   .clearfix:after {
+       content : '.';
+       visibility : hidden;
+       display : block;
+       height : 0;
+       clear : both;
+   }
+ ```
+
