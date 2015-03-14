@@ -19,23 +19,16 @@
     * rotateZ()
   * ```transition```      （IE10）
   * ```@keyframes```      （IE10）
-  * ```animation```       （IE10）
-  
-  常用偽類：
-  
+  * ```animation```       （IE10）  
   * ```:nth-child(x)```
   * ```:enabled``` / ```:disabled```
-  * ```:checked```
-
-  不常用偽類：
-  
+  * ```:checked```  
   * ```:first-of-type``` / ```:last-of-type```
   * ```:only-of-type```
   * ```:only-child```
   
 
 ## ```<link>``` 和 ```@import```
-
 
 ```<link>```是HTML標籤，在HTML文件中引入CSS文件。其實就是告訴瀏覽器這個頁面對應的樣式文件是什麼，形成一種HTML和CSS文件的對應關係。一般推薦使用```link```標籤引入CSS文件。 
 
