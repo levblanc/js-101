@@ -23,9 +23,9 @@
   
   常用偽類：
   
-  *  ```:nth-child(x)```
-  *  ```:enabled``` / ```:disabled```
-  *  ```:checked```
+  * ```:nth-child(x)```
+  * ```:enabled``` / ```:disabled```
+  * ```:checked```
 
   不常用偽類：
   
