@@ -48,9 +48,9 @@ PS：```<link>```的權重高於```@import```。
 
 ### 層疊順序（從小到大）
 1. User agent declarations
-2. User declarations,
-3. Author declarations,
-4. Author ```!important``` declarations,
+2. User declarations
+3. Author declarations
+4. Author ```!important``` declarations
 5. User ```!important``` declarations
 
 ### 樣式權重
