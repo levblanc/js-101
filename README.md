@@ -13,3 +13,4 @@
   * [Primitive Data Types](https://github.com/levblanc/js-101/blob/master/primitive-data-types.md)
   * [Operators](https://github.com/levblanc/js-101/blob/master/operators.md)
   * [The ***this*** Keyword](https://github.com/levblanc/js-101/blob/master/the-this-keyword.md)
+  * [Scope and Closure](https://github.com/levblanc/js-101/blob/master/scope-and-closure.md)
