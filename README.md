@@ -1,6 +1,8 @@
 ## HTML, CSS & Javascript Basics
 此為個人使用的markdown文檔，所列各項均為個人讀書、學習筆記及總結。
 
+文檔創建於2015-02-01。
+
 
 ##文檔結構
 
@@ -14,3 +16,4 @@
   * [Operators](https://github.com/levblanc/js-101/blob/master/operators.md)
   * [The ***this*** Keyword](https://github.com/levblanc/js-101/blob/master/the-this-keyword.md)
   * [Scope and Closure](https://github.com/levblanc/js-101/blob/master/scope-and-closure.md)
+  * [Prototypal Inheritance](https://github.com/levblanc/js-101/blob/master/prototypal-inheritance.md)
